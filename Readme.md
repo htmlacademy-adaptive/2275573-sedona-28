@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Анна Игнатова](https://up.htmlacademy.ru/adaptive/28/user/2275573).
-* Наставник: [Arthur Litovko] (https://htmlacademy.ru/profile/id6927).
+* Наставник: [Arthur Litovko](https://htmlacademy.ru/profile/id6927).
 
 ---
 
