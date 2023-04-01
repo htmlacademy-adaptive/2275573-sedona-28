@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Седона</title>
+</head>
+
+<body class="body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__container">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Фото и видео</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="user-list">
+            <a href="#">Html Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <section class="hero hero--inner">
+      <h1 class="visually-hidden">Фото и видео окрестностей Седоны</h1>
+      <div class="page-hero">
+        <img class="hero__image" src="img/mobail/sedona.svg" alt="Sedona." width="229" height="39">
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery__heading gallery-article">
+        <h2 class="gallery__title">Фото и видео</h2>
+        <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+          забыть о политике и экономике.</p>
+      </div>
+      <ul class="gallery__list list-foto">
+        <li class="gallery__item gallery-card">
+          <a href="#">
+            <img src="img/mobail/catalog/photo-1.jpg" alt="Закат в дороге." width="280" height="280">
+          </a>
+          <div class="gallery-card__description">
+            <div class="gallery-card__content">
+              <h3 class="gallery-card__name">Неродные просторы</h3>
+              <p class="gallery-card__author">Автор фото: Борис</p>
+            </div>
+            <div class="gallery-card__likes">
+              <button class="gallery-card__likes-button" aria-label="Мне нравится.">
+              </button>
+              <span class="visually-hidden">Количество лайков.</span>
+              <span class="gallery-card__likes-amount">1350</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="gallery__item gallery-card">
+          <a href="#">
+            <img src="img/mobail/catalog/photo-2.jpg" alt="Местная растительность на фоне гор." width="280"
+              height="280">
+          </a>
+          <div class="gallery-card__description">
+            <div class="gallery-card__content">
+              <h3 class="gallery-card__name">Местная растительность</h3>
+              <p class="gallery-card__author">Автор фото: Сергей</p>
+            </div>
+            <div class="gallery-card__likes">
+              <button class="gallery-card__likes-button" aria-label="Мне нравится.">
+              </button>
+              <span class="visually-hidden">Количество лайков.</span>
+              <span class="gallery-card__likes-amount">143</span>
+            </div>
+          </div>
+        </li>
+        <li class="gallery__item gallery-card">
+          <a href="#">
+            <img src="img/mobail/catalog/photo-3.jpg" alt="Горная дорога." width="280" height="280">
+          </a>
+          <div class="gallery-card__description">
+            <div class="gallery-card__content">
+              <h3 class="gallery-card__name">Дорога на север</h3>
+              <p class="gallery-card__author">Автор фото: Петр</p>
+            </div>
+            <div class="gallery-card__likes">
+              <button class="gallery-card__likes-button" aria-label="Мне нравится.">
+              </button>
+              <span class="visually-hidden">Количество лайков.</span>
+              <span class="gallery-card__likes-amount">96</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="gallery__item gallery-card">
+          <a href="#">
+            <img src="img/mobail/catalog/photo-4.jpg" alt="Тропа Мост дьявола." width="280" height="280">
+          </a>
+          <div class="gallery-card__description">
+            <div class="gallery-card__content">
+              <h3 class="gallery-card__name">Мост дьявола</h3>
+              <p class="gallery-card__author">Автор фото: Антон</p>
+            </div>
+            <div class="gallery-card__likes">
+              <button class="gallery-card__likes-button" aria-label="Мне нравится.">
+              </button>
+              <span class="visually-hidden">Количество лайков.</span>
+              <span class="gallery-card__likes-amount">254</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="video">
+      <div class="video__heading page-article-video">
+        <h2 class="page-article-video__title">Все еще сомневаетесь?</h2>
+        <p class="page-article-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не
+          подорожали в очередной раз!</p>
+      </div>
+
+      <div class="video__player">
+        <img src="img/mobail/catalog/video.jpg" alt="Видеообзор окрестностей Седоны." width="280" height="177">
+      </div>
+      <button class="video__play-button" type="button" aria-label="Кнопка воспроизведения."></button>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__container">
+      <a href="#">#visitSedona</a>
+      <ul class="social-list">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--vkontakte">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--telegram">Мы в Телеграме</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--youtube">Мы в Ютубе</a>
+        </li>
+      </ul>
+      <div class="main-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
