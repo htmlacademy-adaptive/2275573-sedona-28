@@ -1,12 +1,142 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="UTF-8">
+  <title>Седона</title>
+</head>
 
-  </body>
+<body class="body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седоны."></a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__container">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Фото и видео</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="user-list">
+            <a href="#">Html Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <h1 class="visually-hidden">Туристический сайт города Седоны</h1>
+    <section class="hero">
+      <h2 class="visually-hidden">Welcome to Sedona</h2>
+      <img class="hero__text-image" src="img/hero-text.svg"
+        alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks." width="282" height="214">
+    </section>
+
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <header class="advantages__header">
+        <p class="advantages__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </header>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <div class="advantages__wraper">
+            <h3 class="advantages__reason">Настоящий городок</h3>
+            <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <img src="img/mobail/photo-city.jpg" alt="Улица Седоны." width="320" height="260">
+          </div>
+        </li>
+        <li class="advantages__item">
+          <ul class="advantages__service">
+            <li class="service__item service__item--loging">
+              <h3 class="advantages__reason">Жилье</h3>
+              <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="service__item service__item--food">
+              <h3 class="advantages__reason">Еда</h3>
+              <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="service__item">
+              <h3 class="advantages__reason service__item--souvenir">Сувениры</h3>
+              <p class="advantages__description">Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__wraper">
+            <h3 class="advantages__reason">Там есть мост дьявола</h3>
+            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно </p>
+            <img src="img/mobail/photo-bridge.jpg" alt="Мост Дьявола." width="320" height="260">
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__wraper">
+            <p class="advantages__reason">Небольшая площадь</p>
+            <p class="advantages__description">Все интересные места находятся очень близко</p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__wraper">
+            <h3 class="advantages__reason">Красивая дорога</h3>
+            <p class="advantages__description">Ехать в Седону ИЗ Лас-Вегаса совсем не скучно!</p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__wraper">
+            <h3 class="advantages__reason">Мало туристов</h3>
+            <p class="advantages__description">Большинство едет в Гранд каньон и толпится там</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="search-hotel">
+      <h2 class="visually-hidden">Поиск отеля</h2>
+      <div class="search___wraper">
+        <p class="search__title">Заинтересовались?</p>
+        <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+          в Седонe</p>
+        <a class="button search-hotel__button" href="form.html">Найти гостиницу</a>
+      </div>
+    </section>
+
+    <section class="map">
+      <h2 class="visually-hidden">Карта местности</h2>
+      <img src="img/mobail/map-mobile.jpg" alt="Карта как доедать до Седоны." width="320" height="350">
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__container">
+      <a href="#">#visitSedona</a>
+      <ul class="social-list">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--vkontakte">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--telegram">Мы в Телеграме</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--youtube">Мы в Ютубе</a>
+        </li>
+      </ul>
+      <div class="main-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
