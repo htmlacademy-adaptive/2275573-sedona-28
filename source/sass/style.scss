@@ -1,1 +1,25 @@
-// Начните писать стили здесь
+// миксины
+@import "./mixins.scss";
+
+// базовые свойства
+@import "./base/base.scss";
+@import "./base/fonts.scss";
+
+// блоки
+@import "./blocks/advantages.scss";
+@import "./blocks/body.scss";
+@import "./blocks/button.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/description.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/search-hotel.scss";
+@import "./blocks/social-list.scss";
+@import "./blocks/title.scss";
+@import "./blocks/visually-hidden.scss";
+
+// каталог
+@import "./blocks/catalog/gallery.scss";
+
+// форма
+@import "./blocks/form/feedback.scss";

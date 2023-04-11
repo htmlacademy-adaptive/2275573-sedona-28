@@ -4,32 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Седона: Форма отзыва</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седоны."></a>
+    <nav class="navigation">
+      <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__container">
-        <ul class="main-nav__list site-list">
+      <div class="navigation__container">
+        <ul class="navigation__list site-list">
           <li class="site-list__item site-list__item--current">
-            <a href="index.html">Главная</a>
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Фото и видео</a>
+            <a class="navigation__link" href="catalog.html">Фото и видео</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
+        <ul class="navigation__list user-list">
           <li class="user-list">
-            <a href="#">Форма отзыва</a>
+            <a class="navigation__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="user-list">
-            <a href="#">Html Academy</a>
+            <a class="navigation__link" href="#">Html Academy</a>
           </li>
         </ul>
       </div>
@@ -46,19 +46,19 @@
 
     <section class="feedback">
       <div class="feedback__article">
-        <h2 class="feedback__article-title">Оставьте свой отзыв</h2>
-        <p class="feedback__article-text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
-          вами достопримечательностях</p>
+        <h2 class="feedback__article-title title">Оставьте свой отзыв</h2>
+        <p class="feedback__article-text description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
+          посещенных вами достопримечательностях</p>
       </div>
 
       <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__wrapper">
           <fieldset class="form__group form__group--name">
-            <legend class="form-group__title">Представьтесь:</legend>
-            <label class="form-item__label" for="first-name">Имя*:</label>
+            <legend class="form-group__title title">Представьтесь:</legend>
+            <label class="form-item__label" for="first-name description">Имя*:</label>
             <input class="form-item__input" type="text" name="first-name" id="first-name" placeholder="Введите имя"
               value="Пётр" required>
-            <label class="form-item__label" for="last-name">Фамилия*:</label>
+            <label class="form-item__label" for="last-name description">Фамилия*:</label>
             <input class="form-item__input" type="text" name="last-name" id="last-name" placeholder="Введите фамилию"
               value="Пустота" required>
             <label class="form-item__label" for="patronymic">Отчество:</label>
@@ -77,7 +77,7 @@
         </div>
 
         <fieldset class="form__group form__group--impressions">
-          <legend class="form-group__title">Ваше общее впечатление:</legend>
+          <legend class="form-group__title title">Ваше общее впечатление:</legend>
           <label class="form-item__label">
             <input class="form-item__input" type="radio" name="impressions" value="good" checked>
             <span class="form-item__mark"></span>
@@ -96,7 +96,7 @@
         </fieldset>
 
         <fieldset class="form__group form__group--attractions">
-          <legend class="form-group__title">Посещенные достопримечательности:</legend>
+          <legend class="form-group__title title">Посещенные достопримечательности:</legend>
           <label class="form-item__label">
             <input class="form-item__input" type="checkbox" name="bridge" checked>
             <span class="form-item__mark"></span>
@@ -120,7 +120,7 @@
         </fieldset>
 
         <fieldset class="form__group form__group--review">
-          <legend class="form-group__title">Опишите свои эмоции:</legend>
+          <legend class="form-group__title title">Опишите свои эмоции:</legend>
           <textarea class="form-group__review" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
@@ -134,7 +134,7 @@
 
   <footer class="main-footer">
     <div class="main-footer__container">
-      <a href="#">#visitSedona</a>
+      <a class="main-footer__link" href="#">#visitSedona</a>
       <ul class="social-list">
         <li class="social__item">
           <a href="#" class="social__link social__link--vkontakte">Мы в Вконтакте</a>

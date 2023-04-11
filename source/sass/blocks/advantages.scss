@@ -1,0 +1,11 @@
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__service {
+  @include list-reset;
+}
+
+.advantages__item--blue {
+  background-color: #81b3d2;
+}

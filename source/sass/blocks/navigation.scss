@@ -1,0 +1,16 @@
+.navigation__list {
+  @include list-reset;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.navigation__link {
+  @include link-reset;
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 17px 0 12px;
+  text-align: center;
+}
