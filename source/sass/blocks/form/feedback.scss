@@ -1,0 +1,42 @@
+.form-item__input {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background: #f2f2f2;
+
+  &::placeholder {
+    color: #0000004d;
+  }
+}
+
+.form-group__review {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background: #f2f2f2;
+
+  &::placeholder {
+    color: #0000004d;
+  }
+}
+
+.form__button {
+  border: none;
+}
+
+.form-item__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.form__footnote {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #33333399;
+}
