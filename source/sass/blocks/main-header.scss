@@ -1,0 +1,43 @@
+.main-header {
+  position: relative;
+  min-height: 56px;
+
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.main-header__logo {
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  width: 185px;
+  height: 96px;
+  transform: translateX(-50%);
+
+  &--inner {
+    &:hover {
+      cursor: pointer;
+      filter: drop-shadow(0 -2px 5px #333333);
+    }
+
+    &:active {
+      filter: drop-shadow(0 -2px 3px #333333);
+    }
+
+    &:focus-visible {
+      outline: none;
+      filter: drop-shadow(0 -2px 5px #333333);
+    }
+  }
+}
+
+.main-header__logo-image {
+  display: block;
+}

@@ -1,42 +1,27 @@
-.form-item__input {
-  font-family: "PT Sans", "Tahoma", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  background: #f2f2f2;
+.feedback__article {
+  text-align: center;
+  padding: 36px 20px 28px;
 
-  &::placeholder {
-    color: #0000004d;
+  @media (min-width: $tablet-width) {
+    width: 436px;
+    margin: 0 auto;
+    padding: 64px 0 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 0 4px;
   }
 }
 
-.form-group__review {
-  font-family: "PT Sans", "Tahoma", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  background: #f2f2f2;
+.feedback__article-title {
+  margin: 0;
+  margin-bottom: 24px;
 
-  &::placeholder {
-    color: #0000004d;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
   }
 }
 
-.form__button {
-  border: none;
-}
-
-.form-item__name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-}
-
-.form__footnote {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: #33333399;
+.feedback__article-text {
+  margin: 0;
 }

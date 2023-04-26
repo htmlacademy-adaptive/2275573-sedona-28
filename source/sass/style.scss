@@ -1,5 +1,6 @@
-// миксины
+// миксины и переменные
 @import "./mixins.scss";
+@import "./base/variables.scss";
 
 // базовые свойства
 @import "./base/base.scss";
@@ -7,12 +8,14 @@
 
 // блоки
 @import "./blocks/advantages.scss";
-@import "./blocks/body.scss";
 @import "./blocks/button.scss";
-@import "./blocks/copyright.scss";
 @import "./blocks/description.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/main-container.scss";
 @import "./blocks/main-footer.scss";
+@import "./blocks/main-header.scss";
 @import "./blocks/navigation.scss";
+@import "./blocks/page.scss";
 @import "./blocks/search-hotel.scss";
 @import "./blocks/social-list.scss";
 @import "./blocks/title.scss";
@@ -20,6 +23,10 @@
 
 // каталог
 @import "./blocks/catalog/gallery.scss";
+@import "./blocks/catalog/video.scss";
 
 // форма
 @import "./blocks/form/feedback.scss";
+@import "./blocks/form/form.scss";
+@import "./blocks/form/group-contact.scss";
+@import "./blocks/form/group-control.scss";
