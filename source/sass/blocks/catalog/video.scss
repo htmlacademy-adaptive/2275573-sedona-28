@@ -20,7 +20,7 @@
 
   &::after {
     content: "";
-    background-image: url(../../img/catalog/polygon.png);
+    background-image: url("../../img/catalog/polygon.png");
     position: absolute;
     width: 48px;
     height: 54px;
@@ -44,4 +44,3 @@
     }
   }
 }
-

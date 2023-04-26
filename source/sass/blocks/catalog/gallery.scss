@@ -29,7 +29,6 @@
     padding: 0;
     grid-template-columns: repeat(3, 1fr);
   }
-
 }
 
 .gallery__item {
@@ -76,7 +75,6 @@
 }
 
 .gallery__link {
-
   &:hover {
     opacity: 0.8;
   }
@@ -190,4 +188,3 @@
     }
   }
 }
-
