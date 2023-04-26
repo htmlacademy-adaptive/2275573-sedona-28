@@ -3,162 +3,201 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="/manifest.webmanifest">
 </head>
 
-<body class="body">
-  <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седоны."></a>
-    <nav class="navigation">
-      <button class="navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="navigation__container">
-        <ul class="navigation__list site-list">
-          <li class="site-list__item site-list__item--current">
+<body class="page__body">
+  <div class="page__container">
+    <header class="main-header no-js">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седоны."></a>
+
+      <nav class="navigation navigation--opened navigation--nojs">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
             <a class="navigation__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="navigation__link" href="catalog.html">Фото и видео</a>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current" href="#">Фото и видео</a>
           </li>
-        </ul>
-        <ul class="navigation__list user-list">
-          <li class="user-list">
+          <li class="navigation__item">
             <a class="navigation__link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="user-list">
-            <a class="navigation__link" href="#">Html Academy</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="https://htmlacademy.ru">Html Academy</a>
           </li>
         </ul>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main class="main-container">
-    <section class="hero hero--inner">
-      <h1 class="visually-hidden">Фото и видео окрестностей Седоны</h1>
-      <div class="page-hero">
-        <img class="hero__image" src="img/mobail/sedona.svg" alt="Sedona." width="229" height="39">
-      </div>
-    </section>
+    <main class="main-container">
+      <section class="hero hero--inner">
+        <h1 class="visually-hidden">Фото и видео окрестностей Седоны</h1>
+        <img class="hero__slogan hero__slogan--inner" src="img/hero/slogan-inner.svg" alt="Sedona." width="229"
+          height="39">
+      </section>
 
-    <section class="gallery">
-      <div class="gallery__heading gallery-article">
-        <h2 class="gallery__title title">Фото и видео</h2>
-        <p class="gallery__text description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
-          забыть о политике и экономике.</p>
-      </div>
-      <ul class="gallery__list list-foto">
-        <li class="gallery__item gallery-card">
-          <a href="#">
-            <img src="img/mobail/catalog/photo-1.jpg" alt="Закат в дороге." width="280" height="280">
-          </a>
-          <div class="gallery-card__description">
-            <div class="gallery-card__content">
-              <h3 class="gallery-card__name">Неродные просторы</h3>
-              <p class="gallery-card__author">Автор фото: Борис</p>
-            </div>
-            <div class="gallery-card__likes">
-              <button class="gallery-card__likes-button" aria-label="Мне нравится.">
+      <section class="gallery">
+        <div class="gallery__heading">
+          <h2 class="gallery__title title">Фото и видео</h2>
+          <p class="gallery__text description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+            забыть о политике и экономике.</p>
+        </div>
+        <!-- <section class="cards"> -->
+        <ul class="gallery__list">
+          <li class="gallery__item gallery__item--full">
+            <a class="gallery__link" href="#">
+              <img class="gallery-image" src="img/catalog/road-mobile.jpg" width="280" height="280"
+                alt="Закат в дороге." width="280" height="280">
+            </a>
+            <div class="gallery-card__description">
+              <div class="gallery-card__content">
+                <h3 class="gallery-card__name">Неродные просторы</h3>
+                <p class="gallery-card__author">Автор фото: Борис</p>
+              </div>
+              <button class="gallery-card__button" aria-label="Мне нравится." type="button">
               </button>
               <span class="visually-hidden">Количество лайков.</span>
-              <span class="gallery-card__likes-amount">1350</span>
-            </div>
-          </div>
-        </li>
-
-        <li class="gallery__item gallery-card">
-          <a href="#">
-            <img src="img/mobail/catalog/photo-2.jpg" alt="Местная растительность на фоне гор." width="280"
-              height="280">
-          </a>
-          <div class="gallery-card__description">
-            <div class="gallery-card__content">
-              <h3 class="gallery-card__name">Местная растительность</h3>
-              <p class="gallery-card__author">Автор фото: Сергей</p>
-            </div>
-            <div class="gallery-card__likes">
-              <button class="gallery-card__likes-button" aria-label="Мне нравится.">
+              <span class="gallery-card__likes">1350</span>
               </button>
-              <span class="visually-hidden">Количество лайков.</span>
-              <span class="gallery-card__likes-amount">143</span>
             </div>
-          </div>
-        </li>
-        <li class="gallery__item gallery-card">
-          <a href="#">
-            <img src="img/mobail/catalog/photo-3.jpg" alt="Горная дорога." width="280" height="280">
-          </a>
-          <div class="gallery-card__description">
-            <div class="gallery-card__content">
-              <h3 class="gallery-card__name">Дорога на север</h3>
-              <p class="gallery-card__author">Автор фото: Петр</p>
-            </div>
-            <div class="gallery-card__likes">
-              <button class="gallery-card__likes-button" aria-label="Мне нравится.">
+          </li>
+
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery-image" src="img/catalog/cactus-mobile.jpg" alt="Местная растительность на фоне гор."
+                width="280" height="280">
+            </a>
+            <div class="gallery-card__description">
+              <div class="gallery-card__content">
+                <h3 class="gallery-card__name">Местная растительность</h3>
+                <p class="gallery-card__author">Автор фото: Сергей</p>
+              </div>
+              <button class="gallery-card__button" aria-label="Мне нравится.">
+                <span class="visually-hidden">Количество лайков.</span>
+                <span class="gallery-card__likes">143</span>
               </button>
-              <span class="visually-hidden">Количество лайков.</span>
-              <span class="gallery-card__likes-amount">96</span>
             </div>
-          </div>
-        </li>
-
-        <li class="gallery__item gallery-card">
-          <a href="#">
-            <img src="img/mobail/catalog/photo-4.jpg" alt="Тропа Мост дьявола." width="280" height="280">
-          </a>
-          <div class="gallery-card__description">
-            <div class="gallery-card__content">
-              <h3 class="gallery-card__name">Мост дьявола</h3>
-              <p class="gallery-card__author">Автор фото: Антон</p>
-            </div>
-            <div class="gallery-card__likes">
-              <button class="gallery-card__likes-button" aria-label="Мне нравится.">
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery-image" src="img/catalog/serpentine-mobile.jpg" alt="Горная дорога." width="280"
+                height="280">
+            </a>
+            <div class="gallery-card__description">
+              <div class="gallery-card__content">
+                <h3 class="gallery-card__name">Дорога на север</h3>
+                <p class="gallery-card__author">Автор фото: Петр</p>
+              </div>
+              <button class="gallery-card__button" aria-label="Мне нравится.">
+                <span class="visually-hidden">Количество лайков.</span>
+                <span class="gallery-card__likes">96</span>
               </button>
-              <span class="visually-hidden">Количество лайков.</span>
-              <span class="gallery-card__likes-amount">254</span>
             </div>
-          </div>
-        </li>
-      </ul>
-    </section>
+          </li>
 
-    <section class="video">
-      <div class="video__heading page-article-video">
-        <h2 class="page-article-video__title title">Все еще сомневаетесь?</h2>
-        <p class="page-article-video__text description">Смотрите видеопрезентацию и скорее за билетами, пока они не
-          подорожали в очередной раз!</p>
-      </div>
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery-image" src="img/catalog/rock-mobile.jpg" alt="Тропа Мост дьявола." width="280"
+                height="280">
+            </a>
+            <div class="gallery-card__description">
+              <div class="gallery-card__content">
+                <h3 class="gallery-card__name">Мост дьявола</h3>
+                <p class="gallery-card__author">Автор фото: Антон</p>
+              </div>
+              <button class="gallery-card__button" aria-label="Мне нравится.">
+                <span class="visually-hidden">Количество лайков.</span>
+                <span class="gallery-card__likes">254</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <!-- </section> -->
+      </section>
 
-      <div class="video__player">
-        <img src="img/mobail/catalog/video.jpg" alt="Видеообзор окрестностей Седоны." width="280" height="177">
-      </div>
-      <button class="video__play-button" type="button" aria-label="Кнопка воспроизведения."></button>
-    </section>
-  </main>
+      <section class="video">
+        <div class="video__heading">
+          <h2 class="page-article-video__title title">Все еще сомневаетесь?</h2>
+          <p class="page-article-video__text description">Смотрите видеопрезентацию и скорее за билетами, пока они не
+            подорожали в очередной раз!</p>
+        </div>
 
-  <footer class="main-footer">
-    <div class="main-footer__container">
-      <a class="main-footer__link" href="#">#visitSedona</a>
-      <ul class="social-list">
-        <li class="social__item">
-          <a href="#" class="social__link social__link--vkontakte">Мы в Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social__link--telegram">Мы в Телеграме</a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social__link--youtube">Мы в Ютубе</a>
-        </li>
-      </ul>
-      <div class="main-footer__copyright copyright">
-        <span class="copyright__text">Разработано</span>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+        <div class="video__player">
+          <img src="img/catalog/video-image.jpg" alt="Видеообзор окрестностей Седоны." width="280" height="177">
+          <!-- <button class="video__play-button" type="button" aria-label="Кнопка воспроизведения."></button> -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__container">
+        <a class="main-footer__link" href="#">#visitSedona</a>
+        <ul class="social-list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vkontakte">
+              <span class="visually-hidden">Мы в Вконтакте</span>
+              <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" s />
+                <g clip-path="url(#clip0_59093_970)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M35.45 17.948C35.616 17.402 35.45 17 34.655 17H32.03C31.362 17 31.054 17.347 30.887 17.73C30.887 17.73 29.552 20.926 27.661 23.002C27.049 23.604 26.771 23.795 26.437 23.795C26.27 23.795 26.019 23.604 26.019 23.057V17.948C26.019 17.292 25.835 17 25.279 17H21.151C20.734 17 20.483 17.304 20.483 17.593C20.483 18.214 21.429 18.358 21.526 20.106V23.904C21.526 24.737 21.373 24.888 21.039 24.888C20.149 24.888 17.984 21.677 16.699 18.003C16.45 17.288 16.198 17 15.527 17H12.9C12.15 17 12 17.347 12 17.73C12 18.412 12.89 21.8 16.145 26.281C18.315 29.341 21.37 31 24.153 31C25.822 31 26.028 30.632 26.028 29.997V27.684C26.028 26.947 26.186 26.8 26.715 26.8C27.105 26.8 27.772 26.992 29.33 28.467C31.11 30.216 31.403 31 32.405 31H35.03C35.78 31 36.156 30.632 35.94 29.904C35.702 29.18 34.852 28.129 33.725 26.882C33.113 26.172 32.195 25.407 31.916 25.024C31.527 24.533 31.638 24.314 31.916 23.877C31.916 23.877 35.116 19.451 35.449 17.948H35.45Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_59093_970">
+                    <rect width="24" height="24" fill="white" transform="translate(12 12)" />
+                  </clipPath>
+                </defs>
+              </svg></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--telegram">
+              <span class="visually-hidden">Мы в Телеграме</span>
+              <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" />
+                <path
+                  d="M34.4393 16.6223L31.2705 31.566C31.0313 32.6205 30.408 32.883 29.5223 32.3865L24.6938 28.8285L22.3643 31.0695C22.1063 31.3275 21.891 31.5428 21.3938 31.5428L21.741 26.6258L30.6893 18.54C31.0785 18.1935 30.6045 18.0008 30.0848 18.348L19.0223 25.314L14.2598 23.823C13.224 23.4998 13.2053 22.7873 14.4758 22.29L33.1035 15.1133C33.966 14.79 34.7205 15.3053 34.4393 16.623V16.6223Z"
+                  fill="white" />
+              </svg></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--youtube">
+              <span class="visually-hidden">Мы в Ютубе</span>
+              <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" />
+                <path
+                  d="M31.1813 17H16.8133C15.3062 17 14 18.3 14 19.8V28.1C14 29.7 15.3062 31 16.8133 31H31.1813C32.7889 31 33.9946 29.7 33.9946 28.2V19.8C34.095 18.3 32.7889 17 31.1813 17ZM21.0333 27.4V20.6L27.8656 24L21.0333 27.4Z"
+                  fill="white" />
+              </svg></a>
+          </li>
+        </ul>
+        <a class="footer__link-academy" href="https://htmlacademy.ru">
+          <span class="footer__link-text">Разработано</span>
+          <svg class="footer__link-logo" width="27" height="35" viewBox="0 0 27 35" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.65 0.449951H13.55L0.0500031 1.84995V26.55L13.55 34.5499L26.95 26.55V1.84995L13.65 0.449951ZM25.05 12.55L13.55 5.74995V5.64995H13.45L13.35 5.54995V5.64995L1.95 12.55V3.54995L13.45 2.34995L25.05 3.54995V12.55ZM13.45 7.24995L24.95 13.95L20.45 16.55L13.35 12.35V13.75L19.25 17.25L18.35 17.75L13.35 14.75V16.15L17.15 18.45L16.35 18.95L13.35 17.15V18.55L15.25 19.65L13.45 20.75L2.05 14.05L13.45 7.24995ZM1.95 15.55L13.35 22.35V23.35L5.45 18.65V20.05L13.45 24.85V25.95L5.45 21.25V22.65L13.45 27.45L21.55 22.55V17.35L24.95 15.35V25.35L13.45 32.25L1.95 25.45V15.55Z"
+              fill="black" />
+          </svg>
+        </a>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
