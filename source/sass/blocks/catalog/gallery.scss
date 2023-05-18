@@ -1,6 +1,6 @@
 .gallery__heading {
   text-align: center;
-  padding: 38px 20px 25px;
+  padding: 38px 20px 35px;
 
   @media (min-width: $tablet-width) {
     width: 445px;
@@ -9,10 +9,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 96px 0 90px;
+    padding: 98px 0 90px;
   }
 }
-
 
 .gallery__list {
   @include list-reset;
@@ -32,10 +31,10 @@
 }
 
 .gallery__item {
-  background: #f2f2f2;
-  padding: 25px 0 25px;
   border-top: 1px solid #e5e5e5;
   position: relative;
+  padding-top: 25px;
+  padding-bottom: 7px;
 
   &:last-child {
     border-bottom: 1px solid #e5e5e5;
@@ -57,21 +56,38 @@
     }
 
     &--full img {
+      width: 648px;
       height: 400px;
     }
   }
 
-
   @media (min-width: $desktop-width) {
     &:first-child {
       grid-column: 1/4;
+
+      .gallery-card__description {
+        padding: 24px 19px 17px 22px;
+      }
     }
 
-
-    .gallery-card__description {
-      padding: 22px 22px 15px 21px;
+    &--full img {
+      width: 1200px;
     }
   }
+}
+
+.gallery__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+}
+
+.gallery__text {
+  margin: 0;
 }
 
 .gallery__link {
@@ -91,8 +107,7 @@
   object-fit: cover;
 
   @media (min-width: $tablet-width) {
-    max-width: 100%;
-    width: 100%;
+    width: 1200px;
     height: 267px;
 
     .cards__item--full img {
@@ -100,9 +115,12 @@
     }
   }
 
-
   @media (min-width: $desktop-width) {
     max-height: 100%;
+
+    .cards__item--full img {
+      width: 1200px;
+    }
   }
 }
 
@@ -119,10 +137,10 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 20px;
+    left: 0;
     bottom: 0;
     width: 100%;
-    padding: 17px 20px 17px 25px;
+    padding: 22px 20px 20px 25px;
     color: #ffffff;
     background-color: #0000004d;
   }
@@ -150,41 +168,39 @@
 }
 
 .gallery-card__likes {
-  position: relative;
-  display: block;
-  padding: 4px 0 4px 37px;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+  color: #000000;
+  padding: 17px 37px;
+  position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 23px;
-    height: 21px;
-    background: url("../../img/catalog/like-icon-black.svg") no-repeat;
-  }
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.4;
-  }
 
   @media (min-width: $tablet-width) {
-    padding-left: 32px;
+    padding: 9px 0 8px 40px;
+    text-align: end;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 4px 0 0 32px;
     color: #ffffff;
+  }
+}
 
-    &::before {
-      background: url("../../img/catalog//like-icon-white.svg") no-repeat;
-    }
+.gallery__like-icon {
+  position: absolute;
+  color: #000000;
+  top: 13px;
+  left: 0;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    top: 5px;
+    left: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+    opacity: 1;
   }
 }

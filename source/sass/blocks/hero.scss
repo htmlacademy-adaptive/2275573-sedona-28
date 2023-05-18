@@ -27,14 +27,17 @@
   }
 
   &--inner {
-    padding: 52px 18px 67px;
+    height: 158px;
+    padding: 52px 10px 0 10px;
 
     @media (min-width: $tablet-width) {
-      padding: 95px 60px 117px;
+      height: 290px;
+      padding: 96px 10px 0 10px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 101px 120px 120px;
+      height: 301px;
+      padding: 102px 8px 0 6px;
     }
   }
 }
@@ -59,3 +62,4 @@
     }
   }
 }
+
