@@ -15,6 +15,8 @@
   margin: 0;
   padding: 25px 18px 24px;
   border: none;
+  border-top: 1px solid #e6e6e6;
+  display: grid;
 
   @media (max-width: $mobile-width-only) {
     &--half:first-child {
@@ -78,17 +80,8 @@
   transform: translateY(24px);
 
   @media (max-width: $mobile-width-only) {
-    &::before {
-      content: "";
-      position: absolute;
-      left: -20px;
-
-      width: calc(100% + 40px);
-      height: 1px;
-
-      background-color: #d6d6d6;
-      transform: translateY(-24px);
-    }
+    width: 100%;
+    float: left;
   }
 
   @media (min-width: $tablet-width) {
