@@ -1,29 +1,46 @@
 .hero {
+  background-color: #c5dcea;
   position: relative;
   padding: 90px 18px 85px;
-  background: url("../img/hero/hero-mobile.jpg") no-repeat bottom;
-  background-color: #c5dcea;
+  background-image: url("../img/hero/hero-mobile.jpg") no-repeat bottom;
   background-size: cover;
+  background-position: left 0 bottom 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero/hero-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 
   &::after {
     content: "";
     position: absolute;
     right: 0;
-    bottom: -1px;
+    bottom: 0;
     z-index: 1;
     width: 100%;
     height: 58px;
     background: url("../img/hero/devider.svg") no-repeat center;
   }
 
+
   @media (min-width: $tablet-width) {
     padding: 77px 60px 91px;
     background-image: url("../img/hero/hero-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/hero-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 78px 120px 90px;
     background-image: url("../img/hero/hero-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/hero-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   &--inner {

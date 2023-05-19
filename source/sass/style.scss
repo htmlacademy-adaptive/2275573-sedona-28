@@ -18,12 +18,13 @@
 @import "./blocks/main-nav.scss";
 @import "./blocks/map.scss";
 @import "./blocks/page.scss";
-@import "./blocks/search-hotel.scss";
-@import "./blocks/social-list.scss";
+@import "./blocks/search.scss";
+@import "./blocks/social.scss";
 @import "./blocks/title.scss";
 @import "./blocks/visually-hidden.scss";
 
 // каталог
+@import "./blocks/catalog/gallery-card.scss";
 @import "./blocks/catalog/gallery.scss";
 @import "./blocks/catalog/video.scss";
 
