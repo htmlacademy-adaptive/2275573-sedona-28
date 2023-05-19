@@ -33,10 +33,10 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
+              <a class="main-nav__link " href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+              <a class="main-nav__link main-nav__link--current" href="catalog.html" aria-current="page">Фото и видео</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Форма отзыва</a>
@@ -63,9 +63,9 @@
             забыть о политике и экономике.</p>
         </div>
 
-        <ul class="gallery__list">
-          <li class="gallery__item gallery__item--full">
-            <a class="gallery__link" href="#">
+        <ul class="gallery__list gallery-card">
+          <li class="gallery-card__item gallery-card__item--full">
+            <a class="gallery-card__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
                   srcset="img/catalog/road-desktop.webp 1x, img/catalog/road-desktop@2x.webp 2x">
@@ -76,8 +76,8 @@
                   srcset="img/catalog/road-desktop.jpg 1x, img/catalog/road-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog/road-tablet.jpg 1x, img/catalog/road-tablet@2x.jpg 2x">
-                <img class="gallery__image" src="img/catalog/road-mobile.jpg" srcset="img/catalog/road-mobile@2x.jpg 2x"
-                  width="280" height="280" alt="Закат в дороге.">
+                <img class="gallery-card__image" src="img/catalog/road-mobile.jpg"
+                  srcset="img/catalog/road-mobile@2x.jpg 2x" width="280" height="280" alt="Закат в дороге.">
               </picture>
             </a>
             <div class="gallery-card__description">
@@ -85,8 +85,7 @@
                 <h3 class="gallery-card__name">Неродные просторы</h3>
                 <p class="gallery-card__author">Автор фото: Борис</p>
               </div>
-              <button class="gallery-card__button" aria-label="Мне нравится." type="button">
-                <span class="visually-hidden">Количество лайков.</span>
+              <button class="gallery-card__button" aria-label="Количество лайков." type="button">
                 <span class="gallery-card__likes">
                   <svg class="gallery__like-icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
@@ -96,7 +95,7 @@
             </div>
           </li>
 
-          <li class="gallery__item">
+          <li class="gallery-card__item">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/catalog/cactus-desktop.webp 1x, img/catalog/cactus-desktop@2x.webp 2x">
@@ -108,7 +107,7 @@
                 srcset="img/catalog/cactus-desktop.jpg 1x, img/catalog/cactus-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="img/catalog/cactus-tablet.jpg 1x, img/catalog/cactus-tablet@2x.jpg 2x">
-              <img class="gallery-image" src="img/catalog/cactus-mobile.jpg"
+              <img class="gallery-card__image" src="img/catalog/cactus-mobile.jpg"
                 srcset="img/catalog/cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность.">
             </picture>
             <div class="gallery-card__description">
@@ -116,8 +115,7 @@
                 <h3 class="gallery-card__name">Местная растительность</h3>
                 <p class="gallery-card__author">Автор фото: Сергей</p>
               </div>
-              <button class="gallery-card__button" aria-label="Мне нравится.">
-                <span class="visually-hidden">Количество лайков.</span>
+              <button class="gallery-card__button" aria-label="Количество лайков." type="button">
                 <span class="gallery-card__likes">
                   <svg class="gallery__like-icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
@@ -126,8 +124,8 @@
               </button>
             </div>
           </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="#">
+          <li class="gallery-card__item">
+            <a class="gallery-card__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
                   srcset="img/catalog/serpentine-desktop.webp 1x, img/catalog/serpentine-desktop@2x.webp 2x">
@@ -139,7 +137,7 @@
                   srcset="img/catalog/serpentine-desktop.jpg 1x, img/catalog/serpentine-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog/serpentine-tablet.jpg 1x, img/catalog/serpentine-tablet@2x.jpg 2x">
-                <img class="gallery-image" src="img/catalog/serpentine-mobile.jpg"
+                <img class="gallery-card__image" src="img/catalog/serpentine-mobile.jpg"
                   srcset="img/catalog/serpentine-mobile@2x.jpg 2x" width="280" height="280" alt="Горная дорога.">
               </picture>
             </a>
@@ -148,8 +146,7 @@
                 <h3 class="gallery-card__name">Дорога на север</h3>
                 <p class="gallery-card__author">Автор фото: Петр</p>
               </div>
-              <button class="gallery-card__button" aria-label="Мне нравится.">
-                <span class="visually-hidden">Количество лайков.</span>
+              <button class="gallery-card__button" aria-label="Количество лайков." type="button">
                 <span class="gallery-card__likes">
                   <svg class="gallery__like-icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
@@ -159,8 +156,8 @@
             </div>
           </li>
 
-          <li class="gallery__item">
-            <a class="gallery__link" href="#">
+          <li class="gallery-card__item">
+            <a class="gallery-card__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
                   srcset="img/catalog/rock-desktop.webp 1x, img/catalog/rock-desktop@2x.webp 2x">
@@ -171,8 +168,8 @@
                   srcset="img/catalog/rock-desktop.jpg 1x, img/catalog/rock-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog/rock-tablet.jpg 1x, img/catalog/rock-tablet@2x.jpg 2x">
-                <img class="gallery-image" src="img/catalog/rock-mobile.jpg" srcset="img/catalog/rock-mobile@2x.jpg 2x"
-                  width="280" height="280" alt="Мост дьявола.">
+                <img class="gallery-card__image" src="img/catalog/rock-mobile.jpg"
+                  srcset="img/catalog/rock-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
               </picture>
             </a>
             <div class="gallery-card__description">
@@ -180,8 +177,7 @@
                 <h3 class="gallery-card__name">Мост дьявола</h3>
                 <p class="gallery-card__author">Автор фото: Антон</p>
               </div>
-              <button class="gallery-card__button" aria-label="Мне нравится.">
-                <span class="visually-hidden">Количество лайков.</span>
+              <button class="gallery-card__button" aria-label="Количество лайков." type="button">
                 <span class="gallery-card__likes">
                   <svg class="gallery__like-icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
@@ -225,35 +221,37 @@
     <footer class="main-footer">
       <div class="main-footer__container">
         <a class="main-footer__link" href="#">#visitSedona</a>
-        <ul class="social-list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <svg class="social__icon" width="24" height="14" viewBox="0 0 24 14" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#vk"></use>
-              </svg>
-              <span class="visually-hidden">Мы в Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="https://t.me/htmlacademy" class="social__link social__link--telegram">
-              <svg class="social__icon" width="22" height="18" viewBox="0 0 22 18" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#telegram"></use>
-              </svg>
-              <span class="visually-hidden">Мы в Телеграме</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="https://www.youtube.com/user/htmlacademyru" class="social__link social__link--youtube">
-              <svg class="social__icon" width="20" height="14" viewBox="0 0 20 14" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#youtube"></use>
-              </svg>
-              <span class="visually-hidden">Мы в Ютубе</span>
-            </a>
-          </li>
-        </ul>
+        <div class="main-footer__social social">
+          <ul class="social-list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <svg class="social__icon" width="24" height="14" viewBox="0 0 24 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://t.me/htmlacademy" class="social__link social__link--telegram">
+                <svg class="social__icon" width="22" height="18" viewBox="0 0 22 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#telegram"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Телеграме</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.youtube.com/user/htmlacademyru" class="social__link social__link--youtube">
+                <svg class="social__icon" width="20" height="14" viewBox="0 0 20 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Ютубе</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="main-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано:
             <svg width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
