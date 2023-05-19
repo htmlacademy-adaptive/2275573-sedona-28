@@ -1,0 +1,32 @@
+.feedback__article {
+  text-align: center;
+  padding: 36px 20px 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 436px;
+    margin: 0 auto;
+    padding: 64px 0 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 0 4px;
+  }
+}
+
+.feedback__article-title {
+  margin: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
+  }
+}
+
+.feedback__article-text {
+  margin: 0;
+}

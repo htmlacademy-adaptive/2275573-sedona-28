@@ -1,1 +1,36 @@
-// Начните писать стили здесь
+// миксины и переменные
+@import "./mixins.scss";
+@import "./base/variables.scss";
+
+// базовые свойства
+@import "./base/base.scss";
+@import "./base/fonts.scss";
+
+// блоки
+@import "./blocks/advantages.scss";
+@import "./blocks/button.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/description.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/map.scss";
+@import "./blocks/page.scss";
+@import "./blocks/search.scss";
+@import "./blocks/social.scss";
+@import "./blocks/title.scss";
+@import "./blocks/visually-hidden.scss";
+
+// каталог
+@import "./blocks/catalog/gallery-card.scss";
+@import "./blocks/catalog/gallery.scss";
+@import "./blocks/catalog/video.scss";
+
+// форма
+@import "./blocks/form/feedback.scss";
+@import "./blocks/form/form.scss";
+@import "./blocks/form/group-contact.scss";
+@import "./blocks/form/group-control.scss";
+@import "./blocks/form/modal.scss";

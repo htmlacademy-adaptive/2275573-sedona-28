@@ -1,0 +1,27 @@
+.button {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: #81b3d2;
+  padding: 16px 30px 16px;
+  text-transform: uppercase;
+  display: block;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: #ffffff4d;
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    color: #ffffff;
+    background-color: #e5e5e5;
+    cursor: default;
+  }
+}
