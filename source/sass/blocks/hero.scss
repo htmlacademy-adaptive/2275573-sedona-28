@@ -4,7 +4,8 @@
   padding: 90px 18px 85px;
   background-image: url("../img/hero/hero-mobile.jpg") no-repeat;
   background-size: cover;
-  background-position: left 0 bottom 0;
+  background-position: bottom;
+
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero/hero-mobile@2x.jpg");
