@@ -68,7 +68,7 @@
 
           <fieldset class="form__fieldset form__fieldset--half">
             <legend class="form__legend">Представьтесь:</legend>
-            <ul class="form__list form__list--contact">
+            <ul class="form__list">
               <li class="form__item">
                 <label class="form__contact group-contact">
                   <span class="group-contact__label">Имя*:</span>
@@ -95,19 +95,19 @@
 
           <fieldset class="form__fieldset form__fieldset--half">
             <legend class="form__legend">Контактная информация:</legend>
-            <ul class="form__list form__list--contact">
+            <ul class="form__list form__list">
               <li class="form__item">
                 <label class="form__contact group-contact">
                   <span class="group-contact__label">Контактный телефон*:</span>
                   <input class="group-contact__input group-contact__input--phone" type="tel" name="user-tel"
-                    placeholder="Введите телефон" autocomplete="off" required>
+                    placeholder="Введите телефон" maxlength="12" required>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__contact group-contact">
                   <span class="group-contact__label">Электронная почта*:</span>
                   <input class="group-contact__input group-contact__input--email" type="email" name="user-email"
-                    placeholder="Введите e-mail" autocomplete="off" required>
+                    placeholder="Введите e-mail" required>
                 </label>
               </li>
             </ul>
